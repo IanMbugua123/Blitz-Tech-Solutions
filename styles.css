@@ -42,7 +42,7 @@
         }
         .design-item:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 15px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 10px 15px rgb(252, 253, 255);
         }
         .design-item img {
             width: 100%;
