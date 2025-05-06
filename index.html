@@ -7,6 +7,7 @@
     <link rel="icon" href="img/icons/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="dist/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-900 text-white">
@@ -1155,6 +1156,12 @@
             </button>
           </form>
         </div>
+
+        <!-- Whatsapp-->
+
+               
+
+        
   
         <div>
           <div class="bg-gray-100 rounded-xl p-8 h-full border border-gray-300">
@@ -1310,9 +1317,10 @@
   </footer>
   
   <!-- Back to Top Button -->
-  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 rounded-full gradient-bg flex items-center justify-center text-black shadow-lg transition opacity-0 invisible">
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 rounded-full gradient-bg flex items-center justify-center text-white shadow-lg transition opacity-0 invisible">
     <i class="fas fa-arrow-up"></i>
   </button>
+  
   
   <!-- Image Gallery Modal -->
   <div id="galleryModal" class="gallery-modal">
@@ -1323,7 +1331,14 @@
       <p id="caption"></p>
     </div>
   </div>
-  
+
+   <!-- Floating WhatsApp Button with Image -->
+   <a id="whatsapp-button" href="https://wa.me/254114885636" 
+   class="fixed bottom-6 left-6 z-50 bg-green-500 hover:bg-green-600 p-3 rounded-full shadow-lg transition duration-300"
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <img src="img/icons/whatsapp.png" alt="WhatsApp" class="w-6 h-6">
+  </a>
     <script src="script.js"></script>
 </body>
 </html>

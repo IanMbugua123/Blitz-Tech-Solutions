@@ -63,3 +63,31 @@ document.querySelectorAll('.design-item img').forEach(img => {
         });
     });
 });
+
+// Whatsapp 
+  document.addEventListener("DOMContentLoaded", function () {
+    const whatsappButton = document.getElementById("whatsapp-button");
+    const heroSection = document.querySelector("#home");
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            whatsappButton.style.display = "none";
+          } else {
+            whatsappButton.style.display = "block";
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.1,
+      }
+    );
+
+    if (heroSection) {
+      observer.observe(heroSection);
+    }
+  });
+
+
