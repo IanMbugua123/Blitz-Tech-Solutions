@@ -1,0 +1,147 @@
+/* ================= GLOBAL ================= */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo-font {
+    letter-spacing: 1px;
+}
+
+/* ================= GRADIENT ================= */
+
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-bg {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+}
+
+/* ================= HERO IMAGE ================= */
+
+.pc-image {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* ================= PRINTING SECTION ================= */
+
+#printing .group {
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Perfect circles */
+#printing .group div {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image fit */
+#printing .group img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text */
+#printing .group p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1f2937;
+    transition: color 0.3s ease;
+}
+
+/* Hover */
+#printing .group:hover {
+    transform: translateY(-8px) scale(1.05);
+}
+
+#printing .group:hover div {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+#printing .group:hover p {
+    color: #ef4444;
+}
+
+/* Featured item */
+#printing .scale-105 {
+    transform: scale(1.1);
+}
+
+/* ================= CONTACT ================= */
+
+input, textarea {
+    transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* ================= MODAL ================= */
+
+.gallery-modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #3b82f6;
+}
+
+/* ================= WHATSAPP BUTTON ================= */
+
+#whatsapp-button {
+    transition: all 0.3s ease;
+}
+
+#whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+/* ================= BACK TO TOP ================= */
+
+#backToTop {
+    transition: all 0.3s ease;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}

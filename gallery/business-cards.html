@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Cards - Blitz-Tech</title>
+
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  background: #7c3aed; /* 🟣 PURPLE THEME */
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: rgba(255,255,255,0.2);
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* HEADER */
+.header h1 {
+  color: #7c3aed;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 12px;
+  text-align: center;
+  font-size: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>Categories</h2>
+
+  <a href="../index.html" class="back-btn">⬅ Back to Home</a>
+
+  <a href="/gallery/Banners.html">Banners</a>
+  <a href="/gallery/brochures.html">Brochures</a>
+  <a href="/gallery/business-cards.html" class="active">Business Cards</a>
+  <a href="/gallery/diary.html">Diary Branding</a>
+  <a href="/gallery/flyers.html">Flyers</a>
+  <a href="/gallery/frames.html">Photo Framing</a>
+  <a href="/gallery/funeral.html">Funeral Programs</a>
+  <a href="/gallery/posters.html">Graphic Posters</a>
+  <a href="/gallery/mugs.html">Mug Printing</a>
+  <a href="/gallery/packaging.html">Packaging</a>
+  <a href="/gallery/rollup.html">Rollup Banners</a>
+  <a href="/gallery/signages.html">Signage Printing</a>
+  <a href="/gallery/tags.html">Tags Printing</a>
+  <a href="/gallery/tshirts.html">T-shirt Printing</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <div class="header">
+    <h1>Business Cards</h1>
+    <p>Professional and premium business card printing</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="img/card1.jpg">
+      <h3>Standard Business Card</h3>
+    </div>
+
+    <div class="card">
+      <img src="img/card2.jpg">
+      <h3>Luxury Matte Finish</h3>
+    </div>
+
+    <div class="card">
+      <img src="img/card3.jpg">
+      <h3>Glossy Business Card</h3>
+    </div>
+
+    <div class="card">
+      <img src="img/card4.jpg">
+      <h3>Embossed Card Design</h3>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>

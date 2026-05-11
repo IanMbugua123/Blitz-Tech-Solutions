@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banners - Blitz-Tech</title>
+
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  background: #e11d48; /* RED THEME */
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: rgba(255,255,255,0.2);
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* HEADER */
+.header h1 {
+  color: #e11d48;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 12px;
+  text-align: center;
+  font-size: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>Categories</h2>
+
+  <a href="../index.html" class="back-btn">⬅ Back to Home</a>
+
+  <a href="/gallery/Banners.html" class="active">Banners</a>
+  <a href="brochures.html">Brochures</a>
+  <a href="business-cards.html">Business Cards</a>
+  <a href="signages.html">Business Signages</a>
+  <a href="tags.html">Company Tags</a>
+  <a href="diary.html">Diary Branding</a>
+  <a href="flyers.html">Fliers</a>
+  <a href="funeral.html">Funeral Programs</a>
+  <a href="posters.html">Graphic Posters</a>
+  <a href="mugs.html">Mug Printing</a>
+  <a href="packaging.html">Packaging</a>
+  <a href="frames.html">Photo Framing</a>
+  <a href="rollup.html">Rollup Banners</a>
+  <a href="tshirts.html">T-shirt Printing</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <div class="header">
+    <h1>Banners</h1>
+    <p>High-quality banner printing services</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="img/banner1.jpg">
+      <h3>Outdoor Banner</h3>
+    </div>
+
+    <div class="card">
+      <img src="img/banner2.jpg">
+      <h3>Event Banner</h3>
+    </div>
+
+    <div class="card">
+      <img src="img/banner3.jpg">
+      <h3>Rollup Banner</h3>
+    </div>
+
+    <div class="card">
+      <img src="img/banner4.jpg">
+      <h3>Vinyl Banner</h3>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
