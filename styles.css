@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* ================= GLOBAL ================= */
 
 body {
@@ -146,7 +146,7 @@ input:focus, textarea:focus {
     opacity: 1;
     visibility: visible;
 }
-=======
+
 
         .gradient-text {
             background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
@@ -298,4 +298,4 @@ input:focus, textarea:focus {
             margin-top: 10px;
         }
     
->>>>>>> 28f5ae0329b8128cf8674fba1a9515934dc48b42
+
